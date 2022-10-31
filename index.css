@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Computer Modern;
+  src: url(font/cmunrm.ttf);
+}
+
 body, html{
   height:100%;
   padding: 0px;
@@ -48,6 +53,8 @@ td#Output{
   position: absolute;
   word-wrap: break-word;
   overflow-x: hidden;
+  font-family: "Computer Modern";
+  font-weight: 500;
 }
 #MathBuffer
 {
@@ -84,5 +91,7 @@ textarea:focus
 
 .MathJax_Display{
   overflow-x: scroll;
+  overflow-y: hidden;
   padding-bottom: 10px;
+  word-wrap: unset;
 }
