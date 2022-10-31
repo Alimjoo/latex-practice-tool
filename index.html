@@ -161,7 +161,7 @@ td#Output{
   height: 100vh;
   padding-left: 20px;
   padding-left: 20px;
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 0;
 }
@@ -172,7 +172,7 @@ td#Output{
   height: 100vh;
   padding-left: 20px;
   padding-left: 20px;
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 0;
 }
@@ -184,7 +184,8 @@ td#Output{
 <tr>
 <td id=Input>
 <textarea 
-placeholder="Try Euler's identity $e^{i \pi} + 1 = 0$ ..."
+placeholder="Inline math : $e^{i\pi} + 1 = 0$ <br>
+Display math : $$ e^{i\pi} + 1 = 0 $$"
 id="MathInput" onkeyup="Preview.Update()">
 </textarea>
 </td>
