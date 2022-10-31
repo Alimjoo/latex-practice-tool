@@ -1,6 +1,6 @@
 function PrintElem()
 {
-    var mywindow = window.open('', 'PRINT', 'height=400,width=600');
+    var mywindow = window.open('', 'PRINT');
 
     // mywindow.document.write('<html><head><title>' + document.title  + '</title>');
     // mywindow.document.write('</head><body >');
