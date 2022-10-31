@@ -95,3 +95,12 @@ textarea:focus
   padding-bottom: 10px;
   word-wrap: unset;
 }
+
+#print {
+  margin: 5px;
+  float: right;
+}
+
+#print img{
+  width: 30px;
+}
