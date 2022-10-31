@@ -14,6 +14,7 @@ table
 }
 textarea
 {
+ resize: none;
  border: none;
  margin: 0px;
  padding-left: 20px;
@@ -46,6 +47,7 @@ td#Input
 td#Output{
   position: absolute;
   word-wrap: break-word;
+  overflow-x: hidden;
 }
 #MathBuffer
 {
@@ -53,10 +55,12 @@ td#Output{
   margin-top: 20px;
   height: 100vh;
   padding-left: 20px;
-  padding-left: 20px;
+  padding-right: 20px;
   /* position: absolute; */
   left: 0;
   top: 0;
+  right: 0;
+
 }
 #MathPreview
 {
@@ -64,7 +68,7 @@ td#Output{
   margin-top: 20px;
   height: 100vh;
   padding-left: 20px;
-  padding-left: 20px;
+  padding-right: 20px;
   /* position: absolute; */
   left: 0;
   top: 0;
@@ -76,4 +80,9 @@ textarea:focus
     outline:0px !important;
     -webkit-appearance:none;
     box-shadow: none !important;
+}
+
+.MathJax_Display{
+  overflow-x: scroll;
+  padding-bottom: 10px;
 }
