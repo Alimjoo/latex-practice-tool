@@ -100,7 +100,7 @@ textarea:focus
   position: fixed;
   cursor: pointer;
   top:2px;
-  right: 2px;
+  right: 20px;
 }
 
 #print img{
