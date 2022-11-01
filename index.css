@@ -100,7 +100,7 @@ textarea:focus
   position: fixed;
   cursor: pointer;
   top:2px;
-  right: 20px;
+  right: 2px;
   display: inline-block;
   z-index: 1;
 }
