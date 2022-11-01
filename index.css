@@ -97,8 +97,9 @@ textarea:focus
 }
 
 #print {
-  margin: 5px;
-  float: right;
+  position: fixed;
+  cursor: pointer;
+  margin: 2px;
 }
 
 #print img{
