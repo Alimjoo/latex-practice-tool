@@ -119,14 +119,14 @@ function PrintElem()
     }
     @media print {
         @page { margin: 0; }
-        body { 
-            margin: 1.6cm; 
+        body {   
             -webkit-print-color-adjust: exact;
         }
         
       }
     </style>
     `);
+    // margin: 1.6cm; 
     mywindow.document.write(document.querySelector('#Output').innerHTML);
     // mywindow.document.write('</body></html>');
     // mywindow.document.querySelector('#MathPreview').style.height="auto";
