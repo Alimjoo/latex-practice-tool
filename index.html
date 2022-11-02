@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="index.css">
 
   <!-- JS -->
-  <script src="index.js"></script>
+  <!-- <script src="index.js"></script> -->
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
       tex2jax: { inlineMath: [ ["$", "$"], ["\\\\(","\\\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
@@ -133,7 +133,7 @@ Display math : $$ e^{i\pi} + 1 = 0 $$" id="MathInput" onkeyup="Preview.Update()"
 </textarea>
       </td>
       <td id=Output>
-        <button id="print" onclick="PrintElem()">
+        <button id="print" onclick="window.print()">
           <img src="printer.png" alt="Print button">
         </button>
         <div id="MathPreview"></div>
