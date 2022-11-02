@@ -28,8 +28,9 @@ textarea
   height: 99.5vh;
   color: #FFF;
   background-color: #222;
-  font-size: 1.5em;
-  font-family: "Courier", monospace;
+  font-size: 1em;
+  /* font-family: "Courier", monospace; */
+  font-family: Menlo, Monaco, 'Courier New', monospace;
   width: 100%;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -58,7 +59,7 @@ td#Output{
 }
 #MathBuffer
 {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-top: 20px;
   height: 100vh;
   padding-left: 20px;
@@ -71,7 +72,7 @@ td#Output{
 }
 #MathPreview
 {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-top: 20px;
   height: 100vh;
   padding-left: 20px;

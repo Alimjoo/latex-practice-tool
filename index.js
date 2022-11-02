@@ -117,6 +117,10 @@ function PrintElem()
     #MathPreview, #MathBuffer, body{
         height:auto !important;
     }
+    #MathBuffer{
+      margin: 20px !important;
+      padding: 0px !important;
+    }
     @media print {
         @page { margin: 0; }
         body {   
@@ -136,8 +140,9 @@ function PrintElem()
 
     setTimeout(function(){
         mywindow.document.querySelector('#print').style.display="none";
+        // mywindow.document.querySelector('#MathPreview').style.fontSize="1rem";
         mywindow.print();
-        mywindow.close();
+        // mywindow.close();
     }, 1000);
     // mywindow.print();
     // mywindow.close();
