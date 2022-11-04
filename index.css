@@ -50,10 +50,13 @@ tr,td{
   padding: 0px;
   margin: 0px;
 }
-td #Input{
+#Input{
   background-color: #222;
 }
-td #outputLatex{
+#Output {
+  position: absolute;
+}
+#outputLatex{
   /* position: absolute; */
   word-wrap: break-word;
   overflow-x: hidden;
