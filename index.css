@@ -35,7 +35,7 @@ textarea{
   background-color: #222;
   font-size: 1em;
   /* font-family: "Courier", monospace; */
-  font-family: Menlo, Monaco, 'Courier New', monospace;
+  font-family: Menlo, Monaco, monospace, Ukij Tor;
   width: 100%;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -60,7 +60,7 @@ tr,td{
   /* position: absolute; */
   word-wrap: break-word;
   overflow-x: hidden;
-  font-family: "Computer Modern", "zhongwen";
+  font-family: "Computer Modern", "chiwer kesme";
   padding: 0px 20px;
   height: 93vh;
 }
