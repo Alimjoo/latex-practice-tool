@@ -7,6 +7,10 @@
   src: url(font/ukijchik.ttf);
   size-adjust: 110%;
 }
+@font-face {
+  font-family: Ukij Tor;
+  src: url(font/ukijtor.ttf);
+}
 
 
 body, html{
