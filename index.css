@@ -2,14 +2,20 @@
   font-family: Computer Modern;
   src: url(font/cmunrm.ttf);
 }
+@font-face {
+  font-family: chiwer kesme;
+  src: url(font/ukijchik.ttf);
+  size-adjust: 110%;
+}
+
 
 body, html{
   height:100%;
   padding: 0px;
   margin: 0px;
+  overflow: hidden;
 }
-table
-{
+table{
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -17,8 +23,7 @@ table
   overflow: hidden;
   /* display: flex; */
 }
-textarea
-{
+textarea{
   resize: none;
   border: none;
   margin: 0px;
@@ -36,8 +41,7 @@ textarea
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;
 }
-tr,td
-{
+tr,td{
   vertical-align: top;
   height: 100vh;
   overflow: auto;
@@ -46,45 +50,21 @@ tr,td
   padding: 0px;
   margin: 0px;
 }
-td#Input
-{
+td #Input{
   background-color: #222;
 }
-td#Output{
-  position: absolute;
+td #outputLatex{
+  /* position: absolute; */
   word-wrap: break-word;
   overflow-x: hidden;
-  font-family: "Computer Modern";
-  font-weight: 500;
+  font-family: "Computer Modern", "zhongwen";
+  padding: 0px 20px;
+  height: 93vh;
 }
-#MathBuffer
-{
-  font-size: 1em;
-  margin-top: 20px;
-  height: 100vh;
-  padding-left: 20px;
-  padding-right: 20px;
-  /* position: absolute; */
-  left: 0;
-  top: 0;
-  right: 0;
 
-}
-#MathPreview
-{
-  font-size: 1em;
-  margin-top: 20px;
-  height: 100vh;
-  padding-left: 20px;
-  padding-right: 20px;
-  /* position: absolute; */
-  left: 0;
-  top: 0;
-}
 textarea:hover,  
 textarea:active,  
-textarea:focus
-{
+textarea:focus{
     outline:0px !important;
     -webkit-appearance:none;
     box-shadow: none !important;
@@ -97,30 +77,38 @@ textarea:focus
   word-wrap: unset;
 }
 
-#print {
-  position: fixed;
+.tool-bar button {
   cursor: pointer;
-  top:2px;
-  right: 2px;
-  display: inline-block;
   z-index: 1;
 }
 
-#print img{
-  width: 30px;
+
+.tool-bar img{
+  width: 25px;
 }
 
+.tool-bar{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 10px;
+  background-color: #222;
+  padding-left: 5px;
+}
+
+
+
 @media print{
-  #print, #Input {
+  .tool-bar, #Input {
     display: none;
   }
   #Output{
     width: 100%;
   }
-  #MathPreview, #MathBuffer, body, #Output, #Input{
+  #outputLatex,body, #Output{
     height:auto !important;
   }
-  #MathBuffer{
+  #outputLatex{
     margin: 20px !important;
     padding: 0px !important;
   }

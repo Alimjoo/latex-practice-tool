@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="index.css">
 
   <!-- JS -->
-  <!-- <script src="index.js"></script> -->
+  <script src="index.js"></script>
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
       tex2jax: { inlineMath: [ ["$", "$"], ["\\\\(","\\\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
@@ -127,17 +127,25 @@
 
   <table cellspacing="0" cellpadding="0">
     <tr>
-      <td id=Input>
-        <textarea placeholder="Inline math : $e^{i\pi} + 1 = 0$ <br>
-Display math : $$ e^{i\pi} + 1 = 0 $$" id="MathInput" onkeyup="Preview.Update()">
+      <td id="Input">
+        <textarea dir="auto" placeholder="行内公式 : $e^{i\pi} + 1 = 0$ 
+<br>
+居中公式 : $$ e^{i\pi} + 1 = 0 $$" id="MathInput" onkeyup="Preview.Update()">
 </textarea>
       </td>
-      <td id=Output>
-        <button id="print" onclick="window.print()">
-          <img src="printer.png" alt="Print button">
-        </button>
-        <div id="MathPreview"></div>
-        <div id="MathBuffer"></div>
+      <td id="Output">
+        <div class="tool-bar">
+          <button id="print" onclick="window.print()" title="导出PDF">
+            <img src="img/printer.png" alt="Print button">
+          </button>
+          <button id="rtl" onclick="toggleRTL();" title="适配右到左语言(维语)">
+            <img src="img/rtl.png" alt="right to left">
+          </button>
+        </div>
+        <div id="outputLatex" dir="ltr">
+          <div id="MathPreview"></div>
+          <div id="MathBuffer"></div>
+        </div>
       </td>
     </tr>
   </table>
